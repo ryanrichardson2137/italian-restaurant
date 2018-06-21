@@ -1,0 +1,327 @@
+body{
+    margin:0;
+    padding:0;
+}
+#menu{
+    position:absolute;
+    height:40px;
+    width:40px;
+    top:8%;
+    left:2%;
+    z-index: 9;
+    background-color:#870F27;
+    color:white;
+}
+#navbar{
+    display:block;
+}
+.hide{
+    margin-left:-240px;
+    transition: all 0.5s ease-in-out;
+}
+.show{
+    margin-left:0%;
+    transition: all 0.5s ease-in-out;
+}
+nav{
+    height:100vh;
+    max-height: 100vh;
+    width:230px;
+    position:fixed;
+    overflow: hidden;
+    display: none;
+    z-index: 10;
+    background-color:rgba(135, 15, 39, 0.9);
+    transition: all 0.5s ease-in-out;
+}
+.fa-times{
+    color:white;
+    position:absolute;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    top:10px;
+    right:10px;
+    opacity:0.8;
+}
+.fa-times:hover{
+    opacity:1;
+}
+nav h1{
+    font-family:'Great Vibes', cursive;
+    margin:33% 5% 20% 5%;
+    padding:20px 0px;;
+    color:white;
+    text-align: center;
+    border-top:white 1px double;
+    border-bottom:white 1px double;
+}
+nav ul{
+    padding:0px 0px;
+    text-align: center;
+    list-style: none;
+}
+nav li{
+    margin:20% 15%;
+    padding:10% 0%;
+}
+nav li:hover{
+    margin:20% 0%;
+    background-color: white;
+    transition:0.5s;
+}
+nav li:hover a{
+    color:#870f27;
+    font-size:24px;
+    text-decoration: none;
+    transition:0.5s;
+}
+nav a{
+    color:white;
+    font-family: 'Playfair display', serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+.banner{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.content-group{
+    position: relative;
+    display:block;
+    background-color:#f8f8f8;
+    z-index: 2;
+    border-top: solid 1px lightgray;
+}
+.parallax-container{
+    display: flex;
+    flex: 1 1 auto;
+    position:relative;
+    z-index: -1;
+    justify-content: center;
+    height:100vh;
+    transform: translateZ(-1px) scale(2);
+    background-image: url(about-images/alcohol-close-up-colors-935240.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+}
+.parallax-container h1{
+    top:23%;
+    left:46%;
+    position:absolute;
+    font-size:110px;
+    color:#870F27;
+    font-family: 'Great vibes', cursive;
+    text-shadow: 38px 38px #f7f7f7;
+}
+.parallax-container h2{
+    font-size:50px;
+    font-family: 'Great Vibes', cursive;
+    position:absolute;
+    top:75%;
+    left:56%;
+}
+.parallax-container p{
+    font-size:36px;
+    font-family: 'Great Vibes', cursive;
+    position: absolute;
+    top:52%;
+    left:62%;
+}
+.content{
+    margin:9% 0% 0% 0%;
+}
+#absolute{
+    font-family:'Great Vibes', cursive;
+    color:goldenrod;
+    font-size:70px;
+}
+.content h1{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size:58px;
+    margin:0% 31% 3% 31%;
+    color:#870f27;
+}
+#blurry{
+    height:100%;
+    width:100%;
+    position:relative;
+    border-radius:5px;
+    border:solid 1px black;
+}
+#blurry2{
+   height:100%;
+    width:100%;
+    position:relative;
+    border-radius:5px;
+    border:solid 1px black; 
+}
+.row{
+    margin:15% 5%;
+}
+.row img:hover{
+    box-shadow: 2px 2px 2px 2px goldenrod;
+    transition:.5s
+}
+.col-lg-6{
+    padding-top:20px;
+}
+.box h2{
+    text-align: center;
+    color:crimson;
+    font-family: 'Playfair Display', serif;
+}
+.box p{
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    line-height: 2em;
+    
+}
+.sec1{
+    background-image: url(about-images/italian-italy-pasta-3498.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat:none;
+    background-attachment: fixed;
+}
+.mid{
+    margin:5% 5% 5% 35%;
+    padding:2.5%;
+}
+.mid h2{
+    text-align: center;
+    color:crimson;
+    font-family: 'Playfair Display', serif;
+}
+.mid p{
+    font-size:18px;
+    font-family: 'Playfair Display', serif;
+    line-height: 2em;
+}
+footer{
+    border-top:1px solid black;
+    background-color:#870F27;
+    margin:10% 0 0 0;
+    height:160px;
+    text-align: center;
+}
+footer i{
+    color:white;
+    margin:3% 3%;
+}
+footer i:hover{
+    cursor:pointer;
+    color:lemonchiffon;
+    transition:.5s;
+}
+@media (max-width:1129px){
+
+.parallax-container h1{
+    top:23%;
+    left:36%;
+    position:absolute;
+    font-size:80px;
+    color:#870F27;
+    font-family: 'Great vibes', cursive;
+    text-shadow: 38px 38px #f7f7f7;
+}
+.parallax-container h2{
+    font-size:50px;
+    font-family: 'Great Vibes', cursive;
+    position:absolute;
+    top:75%;
+    left:56%;
+}
+.parallax-container p{
+    font-size:36px;
+    font-family: 'Great Vibes', cursive;
+    position: absolute;
+    top:52%;
+    left:62%;
+}
+}
+@media (max-width:919px){
+    .parallax-container h1{
+    top:23%;
+    left:30%;
+    position:absolute;
+    font-size:60px;
+    color:#870F27;
+    font-family: 'Great vibes', cursive;
+    text-shadow: 38px 38px #f7f7f7;
+}
+.parallax-container h2{
+    font-size:50px;
+    font-family: 'Great Vibes', cursive;
+    position:absolute;
+    top:75%;
+    left:26%;
+}
+.parallax-container p{
+    font-size:36px;
+    font-family: 'Great Vibes', cursive;
+    position: absolute;
+    top:52%;
+    left:36%;
+}
+.parallax-container{
+    display: flex;
+    flex: 1 1 auto;
+    position:relative;
+    z-index: -1;
+    justify-content: center;
+    height:100vh;
+    transform: translateZ(-1px) scale(2);
+    background-image: url();
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+}
+}
+@media (max-width:568px){
+.parallax-container h1{
+    top:30%;
+    left:25%;
+    position:absolute;
+    font-size:40px;
+    color:#870F27;
+    font-family: 'Great vibes', cursive;
+    text-shadow: 38px 38px #f7f7f7;
+}
+.parallax-container h2{
+    font-size:30px;
+    font-family: 'Great Vibes', cursive;
+    position:absolute;
+    top:75%;
+    left:20%;
+}
+.parallax-container p{
+    font-size:26px;
+    font-family: 'Great Vibes', cursive;
+    position: absolute;
+    top:52%;
+    left:31%;
+}
+.parallax-container{
+    display: flex;
+    flex: 1 1 auto;
+    position:relative;
+    z-index: -1;
+    justify-content: center;
+    height:100vh;
+    transform: translateZ(-1px) scale(2);
+    background-image: url();
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+}
+}
+@media (max-width:766px){
+#here{
+    font-size:40px;
+}
+}
